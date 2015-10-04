@@ -11,7 +11,6 @@
 		79C88E3A1BC0F4D5003EFB6C /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = F82D39891AA61A7700DAC057 /* ONOXMLDocument.h */; };
 		79C88E3B1BC0F4D8003EFB6C /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F82D398A1AA61A7700DAC057 /* ONOXMLDocument.m */; };
 		79C88E3F1BC0F594003EFB6C /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C88E3E1BC0F594003EFB6C /* libxml2.tbd */; };
-		79C88E471BC0F60D003EFB6C /* Ono_tvOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C88E461BC0F60D003EFB6C /* Ono_tvOS_Tests.swift */; };
 		79C88E4C1BC0F62F003EFB6C /* ONOAtomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F82D39981AA61AD000DAC057 /* ONOAtomTests.m */; };
 		79C88E4D1BC0F62F003EFB6C /* ONOCSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F82D39991AA61AD000DAC057 /* ONOCSSTests.m */; };
 		79C88E4E1BC0F62F003EFB6C /* ONODefaultNamespaceXPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F82D399A1AA61AD000DAC057 /* ONODefaultNamespaceXPathTests.m */; };
@@ -76,8 +75,6 @@
 		79C88E311BC0F427003EFB6C /* Ono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C88E3E1BC0F594003EFB6C /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		79C88E441BC0F60D003EFB6C /* Ono tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ono tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79C88E461BC0F60D003EFB6C /* Ono_tvOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ono_tvOS_Tests.swift; sourceTree = "<group>"; };
-		79C88E481BC0F60D003EFB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F82D394E1AA6199E00DAC057 /* Ono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82D39521AA6199E00DAC057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		F82D39591AA6199E00DAC057 /* Ono iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ono iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,15 +151,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		79C88E451BC0F60D003EFB6C /* Ono tvOS Tests */ = {
-			isa = PBXGroup;
-			children = (
-				79C88E461BC0F60D003EFB6C /* Ono_tvOS_Tests.swift */,
-				79C88E481BC0F60D003EFB6C /* Info.plist */,
-			);
-			path = "Ono tvOS Tests";
-			sourceTree = "<group>";
-		};
 		F82D39441AA6199E00DAC057 = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +158,6 @@
 				F82D39501AA6199E00DAC057 /* Source */,
 				F82D395D1AA6199E00DAC057 /* Tests */,
 				F82D39971AA61AA600DAC057 /* Vendor */,
-				79C88E451BC0F60D003EFB6C /* Ono tvOS Tests */,
 				F82D394F1AA6199E00DAC057 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -400,6 +387,7 @@
 		F82D39451AA6199E00DAC057 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Mattt Thompson";
 				TargetAttributes = {
@@ -518,7 +506,6 @@
 				79C88E4F1BC0F62F003EFB6C /* ONOHTMLTests.m in Sources */,
 				79C88E4E1BC0F62F003EFB6C /* ONODefaultNamespaceXPathTests.m in Sources */,
 				79C88E511BC0F62F003EFB6C /* ONOXMLTests.m in Sources */,
-				79C88E471BC0F60D003EFB6C /* Ono_tvOS_Tests.swift in Sources */,
 				79C88E4C1BC0F62F003EFB6C /* ONOAtomTests.m in Sources */,
 				79C88E4D1BC0F62F003EFB6C /* ONOCSSTests.m in Sources */,
 			);
@@ -598,7 +585,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattt.Ono.Ono-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = Ono;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -622,7 +609,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattt.Ono.Ono-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = Ono;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -637,9 +624,9 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Ono tvOS Tests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattt.Ono.Ono-tvOS-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -653,9 +640,9 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Ono tvOS Tests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattt.Ono.Ono-tvOS-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -916,6 +903,7 @@
 				79C88E371BC0F428003EFB6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79C88E491BC0F60D003EFB6C /* Build configuration list for PBXNativeTarget "Ono tvOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -924,6 +912,7 @@
 				79C88E4B1BC0F60D003EFB6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F82D39481AA6199E00DAC057 /* Build configuration list for PBXProject "Ono" */ = {
 			isa = XCConfigurationList;
